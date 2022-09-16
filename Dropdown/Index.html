@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Dropdown</title>
+</head>
+<body>
+<center>
+    <div id="container">
+        <form action="" >
+            <table>
+                <tr>
+                    <td>First </td>
+                    <select  name="first" id="myfirst" > 
+                        <option>Select City</option>
+                        <option>Indore</option>
+                        <option>Bhopal</option>
+                        <option>Dewas</option>
+                        <option>Guna</option>
+                        <option>Jabalpur</option>
+                        <option>Khandwa</option> 
+                        </select>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr></tr><tr></tr>
+                <tr>
+                    <td>Second </td>
+                    <td><select  name="second" id="mysecond" > 
+                        <option>Select City</option>
+                        <option>Indore</option>
+                        <option>Bhopal</option>
+                        <option>Dewas</option>
+                        <option>Guna</option>
+                        <option>Jabalpur</option>
+                        <option>Khandwa</option>
+                    </select>
+                    </td>
+                </tr>
+                <tr></tr><tr></tr><tr></tr>
+                <tr>
+                    <td>Third </td>
+                    <td><select  name="third" id="mythird"> 
+                        <option>Select City</option>
+                        <option>Indore</option>
+                        <option>Bhopal</option>
+                        <option>Dewas</option>
+                        <option>Guna</option>
+                        <option>Jabalpur</option>
+                        <option>Khandwa</option>                        
+                    </select>
+                    </td>
+                </tr>
+                <tr></tr><tr></tr><tr></tr>
+                <tr>
+                    <td></td>
+                    <td><input type="submit" onclick="checkNow(this.value)" value="Submit"></td>
+                </tr>
+            </table>
+        </form>
+        <input id="firstresponse" value="" >
+    </div>
+</center>
+<script>
+    var firstValue=toString(document.querySelector('#myfirst'));
+    var secondValue=document.querySelector('#mysecond');
+    var thirdValue=document.querySelector('#mythird');
+    
+   
+    function checkNow(allDetails)
+    {
+        if(firstValue!="")
+        {
+            var first=toString(allDetails.first);
+            document.getElementById('firstresponse').value=firstValue;
+        }
+    }
+
+
+</script>
+</body>
+</html>
